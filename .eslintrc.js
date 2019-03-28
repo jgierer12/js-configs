@@ -1,3 +1,1 @@
-module.exports = {
-  ...require(`./eslint`)
-};
+module.exports = require(`deepmerge`)(require(`./eslint`), {});
