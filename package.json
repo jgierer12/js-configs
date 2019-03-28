@@ -1,0 +1,27 @@
+{
+  "name": "js-configs-jgierer12",
+  "version": "0.0.0",
+  "description": "jgierer12's generic configurations for various JS tools",
+  "repository": "https://github.com/jgierer12/eslint-config-jgierer12",
+  "license": "MIT",
+  "scripts": {
+    "test": "run-s lint",
+    "format": "run-p --print-label format:*",
+    "format:js": "run-s \"_eslint -- --fix\"",
+    "format:other": "run-s \"_prettier -- --write\"",
+    "lint": "run-p --print-label --continue-on-error lint:*",
+    "lint:js": "run-s _eslint",
+    "lint:other": "run-s _prettier",
+    "_eslint": "eslint --color --ignore-path .gitignore \"**/*.js\"",
+    "_prettier": "prettier --check --ignore-path .gitignore \"**/*.{json,md,mdx,yml,graphql}\""
+  },
+  "dependencies": {
+    "eslint-config-healthier": "^2.0.0",
+    "eslint-plugin-prettier": "^3.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^5.15.3",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^1.16.4"
+  }
+}
