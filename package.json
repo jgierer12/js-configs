@@ -1,8 +1,8 @@
 {
-  "name": "js-configs-jgierer12",
+  "name": "@jgierer12/js-configs",
   "version": "0.0.0",
   "description": "jgierer12's generic configurations for various JS tools",
-  "repository": "https://github.com/jgierer12/eslint-config-jgierer12",
+  "repository": "https://github.com/jgierer12/js-configs",
   "license": "MIT",
   "scripts": {
     "test": "run-s lint",
