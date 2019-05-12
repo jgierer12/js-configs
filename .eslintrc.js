@@ -1,1 +1,1 @@
-module.exports = require(`deepmerge`)(require(`./eslint`), {});
+module.exports = require(`merge-deep`)(require(`./eslint`), {});

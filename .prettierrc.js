@@ -1,1 +1,1 @@
-module.exports = require(`deepmerge`)(require(`./prettier`), {});
+module.exports = require(`merge-deep`)(require(`./prettier`), {});
