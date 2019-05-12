@@ -16,12 +16,21 @@
     "_prettier": "prettier --check --ignore-path .gitignore \"**/*.{json,md,mdx,yml,graphql}\""
   },
   "dependencies": {
-    "eslint-config-healthier": "^2.0.0",
-    "eslint-plugin-prettier": "^3.0.1"
+    "eslint-config-prettier": "^4.2.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-config-standard-jsx": "^6.0.2",
+    "eslint-config-standard-react": "^7.0.2",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-node": "^9.0.1",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-promise": "^4.1.1",
+    "eslint-plugin-react": "^7.13.0",
+    "eslint-plugin-react-hooks": "^1.6.0",
+    "eslint-plugin-standard": "^4.0.0",
+    "merge-deep": "^3.0.2"
   },
   "devDependencies": {
     "eslint": "^5.15.3",
-    "merge-deep": "^3.0.2",
     "npm-run-all": "^4.1.5",
     "prettier": "^1.16.4"
   }

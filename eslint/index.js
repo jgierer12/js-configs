@@ -1,6 +1,6 @@
 module.exports = {
-  extends: [`healthier`],
-  plugins: [`prettier`],
+  extends: [`standard`, `prettier`, `prettier/standard`],
+  plugins: [`prettier`, `import`],
   rules: {
     // formatting
     "prettier/prettier": `warn`,
@@ -10,6 +10,6 @@ module.exports = {
     "no-console": [`error`, { allow: [`info`, `warn`, `error`] }],
 
     // https://basarat.gitbooks.io/typescript/docs/tips/defaultIsBad.html
-    "healthier/no-default-export": `error`,
+    "import/no-default-export": `error`,
   },
 };

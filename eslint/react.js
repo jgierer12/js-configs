@@ -1,8 +1,9 @@
-module.exports = {
-  extends: [`healthier/react`],
-  plugins: [`react-hooks`],
+module.exports = require(`merge-deep`)(require(`.`), {
+  extends: [`standard-jsx`, `standard-react`, `prettier/react`],
+  plugins: [`react-hooks`, `react`],
   rules: {
-    "healthier/rules-of-hooks": `error`,
-    "healthier/prop-types": `off`,
+    "react-hooks/rules-of-hooks": `error`,
+    "react-hooks/exhaustive-deps": `warn`,
+    "react/prop-types": `off`,
   },
-};
+});
