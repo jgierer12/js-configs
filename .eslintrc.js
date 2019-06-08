@@ -1,1 +1,3 @@
-module.exports = require(`merge-deep`)(require(`./eslint`), {});
+module.exports = {
+  extends: [`./eslint`],
+};
