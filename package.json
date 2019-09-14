@@ -6,6 +6,7 @@
   "license": "MIT",
   "scripts": {
     "release": "np",
+    "postpublish": "npm publish --ignore-scripts --@jgierer12:registry='https://registry.npmjs.org'",
     "test": "run-s lint",
     "lint": "run-p --print-label --continue-on-error lint:*",
     "lint:js": "eslint --color --ignore-path .gitignore \"**/*.js\"",
