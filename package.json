@@ -1,11 +1,12 @@
 {
   "name": "@jgierer12/js-configs",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "jgierer12's generic configurations for various JS tools",
   "repository": "https://github.com/jgierer12/js-configs",
   "license": "MIT",
   "scripts": {
     "release": "np",
+    "postpublish": "npm publish --ignore-scripts --@jgierer12:registry='https://registry.npmjs.org'",
     "test": "run-s lint",
     "lint": "run-p --print-label --continue-on-error lint:*",
     "lint:js": "eslint --color --ignore-path .gitignore \"**/*.js\"",
